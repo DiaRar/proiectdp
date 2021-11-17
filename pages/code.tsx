@@ -1,7 +1,9 @@
 import type { NextPage } from 'next'
+import { useEffect } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+
 
 const Code: NextPage = () => {
     let code = `#include <fstream>
@@ -60,8 +62,11 @@ int main() {
     for (int i = 0; i < digit_count[0]; ++i) {
         out << ans[i];
     }
-    out << "\n";
+    out << "\\n";
 }`;
+useEffect (() => {
+    hljs.highlightAll();
+})
   return (
     <div className={styles.container}>
      <div className={styles.potato}>

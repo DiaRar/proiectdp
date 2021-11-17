@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link'
 import styles from '../styles/Sidebar.module.css'
+
 import Head from 'next/head';
 
 export default class sidebar extends React.Component {
@@ -27,7 +28,7 @@ export default class sidebar extends React.Component {
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/github-dark.min.css"/>
         {/* <link rel="stylesheet" href="https://unpkg.com/browse/@highlightjs/cdn-assets@11.3.1/styles/github.min.css"/> */}
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
-        <script>hljs.highlightAll();</script>
+        {/* <script>hljs.highlightAll();</script> */}
         </Head>
           <div id="sidebar" className={`${styles.sidebar} ${styles.close}`}>
     <div className={`${styles["logo-details"]}`}>
@@ -36,12 +37,18 @@ export default class sidebar extends React.Component {
     </div>
     <ul className={`${styles["nav-links"]}`}>
       <li>
+      <Link href="/">
         <a href="#">
           <i className="bx bx-grid-alt" ></i>
           <span className={`${styles.link_name}`}>Cerinta</span>
         </a>
+        </Link>
         <ul className={`${styles["sub-menu"]} ${styles.blank}`}>
-          <li><a className={`${styles.link_name}`} href="#">Cerinta</a></li>
+          <li>
+          <Link href="/">
+            <a className={`${styles.link_name}`} href="#">Cerinta</a>
+            </Link>
+            </li>
         </ul>
       </li>
       <li>
