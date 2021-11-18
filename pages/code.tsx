@@ -9,7 +9,8 @@ import styles from '../styles/Home.module.css'
 
 const Code: NextPage = () => {
     let code = `#include <fstream>
- 
+#include <functional>
+
 std::ifstream in("multiplu.in");
 std::ofstream out("multiplu.out");
  
@@ -19,10 +20,6 @@ int prev_mod[N];
 int digit_count[N];
 int digit[N];
 int ans[N];
-
-int gcd(int a, int b) {
-    return b == 0 ? a : gcd(b, a % b);
-}
  
 void bfs(int mod) {
     static int q[N];
@@ -54,6 +51,9 @@ void bfs(int mod) {
 int main() {
     int a, b;
     in >> a >> b;
+    std::function<int(int, int)> gcd = [&](int a, int b) -> int {
+        return b == 0 ? a : gcd(b, a % b);
+    };
     int lcm = a / gcd(a, b) * b;
     bfs(lcm);
     int i = digit_count[0];
