@@ -20,7 +20,6 @@ int digit_count[N];
 int digit[N];
 int ans[N];
 
-/// Returnăm cel mai mare divizor comun.
 int gcd(int a, int b) {
     return b == 0 ? a : gcd(b, a % b);
 }
