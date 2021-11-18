@@ -34,7 +34,7 @@ export default class sidebar extends React.Component {
             <Script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></Script>
           <div id="sidebar" className={`${styles.sidebar} ${styles.close}`}>
     <div className={`${styles["logo-details"]}`}>
-      <i className="bx bxl-c-plus-plus bx-menu"></i>
+      <i className="bx bxl-microsoft-teams bx-menu"></i>
       <span className={`${styles.logo_name}`}>Multiplu</span>
     </div>
     <ul className={`${styles["nav-links"]}`}>
