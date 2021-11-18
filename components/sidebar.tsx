@@ -28,9 +28,10 @@ export default class sidebar extends React.Component {
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/go-mono" type="text/css"/>
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/github-dark.min.css"/>
         {/* <link rel="stylesheet" href="https://unpkg.com/browse/@highlightjs/cdn-assets@11.3.1/styles/github.min.css"/> */}
-        <Script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></Script>
+        
         {/* <script>hljs.highlightAll();</script> */}
         </Head>
+            <Script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></Script>
           <div id="sidebar" className={`${styles.sidebar} ${styles.close}`}>
     <div className={`${styles["logo-details"]}`}>
       <i className="bx bxl-c-plus-plus bx-menu"></i>
