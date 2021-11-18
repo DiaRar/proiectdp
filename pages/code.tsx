@@ -1,4 +1,4 @@
-declare const hljs
+declare const hljs : any;
 
 import type { NextPage } from 'next'
 import { useEffect } from 'react'
