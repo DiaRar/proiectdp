@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link'
+import Script from 'next/script'
 import styles from '../styles/Sidebar.module.css'
 
 import Head from 'next/head';
@@ -27,7 +28,7 @@ export default class sidebar extends React.Component {
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/go-mono" type="text/css"/>
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/github-dark.min.css"/>
         {/* <link rel="stylesheet" href="https://unpkg.com/browse/@highlightjs/cdn-assets@11.3.1/styles/github.min.css"/> */}
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+        <Script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></Script>
         {/* <script>hljs.highlightAll();</script> */}
         </Head>
           <div id="sidebar" className={`${styles.sidebar} ${styles.close}`}>
