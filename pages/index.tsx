@@ -1,6 +1,4 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -28,7 +26,7 @@ const Home: NextPage = () => {
         <br />
         <span className={styles.mono}>1 ≤ A ⋅ B ≤ 2 ⋅ 10<sup>6</sup></span>
 
-        <div className={styles.mono}></div>
+        
       </div>
     </div>
   )

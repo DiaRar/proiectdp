@@ -13,8 +13,13 @@ body {
   box-sizing: border-box;
   font-family: "Cantarell", sans-serif;
 }
-#potato{
+/* #potato{
   font-family: 'GoMonoRegular';
   font-weight: normal;
   font-style: normal;
 }
+pre > code {
+  font-family: 'GoMonoRegular';
+  font-weight: normal;
+  font-style: normal;
+} */

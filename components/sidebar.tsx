@@ -42,13 +42,13 @@ export default class sidebar extends React.Component {
       <Link href="/">
         <a href="#">
           <i className="bx bx-grid-alt" ></i>
-          <span className={`${styles.link_name}`}>Cerinta</span>
+          <span className={`${styles.link_name}`}>Cerința</span>
         </a>
         </Link>
         <ul className={`${styles["sub-menu"]} ${styles.blank}`}>
           <li>
           <Link href="/">
-            <a className={`${styles.link_name}`} href="#">Cerinta</a>
+            <a className={`${styles.link_name}`} href="#">Cerința</a>
             </Link>
             </li>
         </ul>
@@ -69,12 +69,18 @@ export default class sidebar extends React.Component {
         </ul>
       </li>
       <li>
+      <Link href="/explicatie">
         <a href="#">
           <i className="bx bx-image-alt" ></i>
-          <span className={`${styles.link_name}`}>Explicatie</span>
+          <span className={`${styles.link_name}`}>Explicație</span>
         </a>
+        </Link>
         <ul className={`${styles["sub-menu"]} ${styles.blank}`}>
-          <li><a className={`${styles.link_name}`} href="#">Explicatie</a></li>
+          <li>
+          <Link href="/explicatie">
+            <a className={`${styles.link_name}`} href="#">Explicație</a>
+            </Link>
+            </li>
         </ul>
       </li>
       <li>
@@ -86,10 +92,19 @@ export default class sidebar extends React.Component {
           <i id = "exemple" className={`bx bxs-chevron-down ${styles.arrow}`} ></i>
         </div>
         <ul className={`${styles["sub-menu"]}`}>
-          <li><a className={`${styles.link_name}`} href="#">Exemple</a></li>
-          <li><a href="#">Exemplu</a></li>
-          <li><a href="#">Numere mari</a></li>
-          <li><a href="#">Hmm</a></li>
+          <li>
+            <a className={`${styles.link_name}`} href="#">Exemple</a>
+            </li>
+          <li>
+          <Link href="/exemple/1">
+            <a href="#">Exemplu</a>
+            </Link>
+            </li>
+          <li>
+          <Link href="/exemple/2">
+            <a href="#">Numere mari</a>
+            </Link>
+            </li>
         </ul>
       </li>
 </ul>

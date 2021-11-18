@@ -8,6 +8,7 @@
   height: 100vh;
   padding: 20px;
 }
+
 .potato {
   border-radius: 10px;
   color: #fff;
@@ -19,6 +20,9 @@
   padding: 20px;
   overflow-y: auto;
   overflow-x: hidden;
+}
+.oof {
+  width: 75%; 
 }
 .h2 { 
   border-bottom: 0.5px solid #ABB2BF;
@@ -34,4 +38,12 @@
   font-family: 'GoMonoRegular';
   font-weight: normal;
   font-style: normal;
+  width: fit-content;
+}
+.img {
+  min-height: 70%;
+}
+
+.right {
+  float: right;
 }
