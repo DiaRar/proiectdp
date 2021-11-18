@@ -15,6 +15,7 @@ const Explicatie: NextPage = () => {
           <br />
           <br />
           <div className={styles.h2}></div>
+          <br />
           Deoarece soluțiile parțiale pot să aibă foarte multe cifre, acestea nu pot fi memorate direct, ci trebuie utilizat un algoritm pentru reconstrucția soluției. În acest scop, memorăm ultima cifră a numerelor simbolice unui rest (modulo <span className={styles.mono}>n</span>) (pentru <span className={styles.mono}>n<sub>u</sub> ≡ i (mod n)</span>, <span className={styles.mono}>digit[i] = n<sub>u</sub> % 10</span>) și restul numărului reprezentat de nodul tată la împărtirea cu <span className={styles.mono}>n</span> (<span className={styles.mono}>prev_mod[rest<sub>n<sub>fiu</sub></sub>] = rest<sub>n<sub>tată</sub></sub></span>). Cu aceste date reținute, reconstrucția se face prin parcurgerea vectorului de cifre (<span className={styles.mono}>digit[]</span>), începand pe poziția 0 (care reprezintă ultima cifră a soluției), unde indicele următor se obține prin <span className={styles.mono}>i<sub>nou</sub> = prev_mod[i]</span>. Astfel se obține vectorul cifrelor soluției în ordine inversă care este parcurs în ordine inversă pentru afișare.
         <br/>
         </p>
