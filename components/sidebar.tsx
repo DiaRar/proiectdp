@@ -102,7 +102,7 @@ export default class sidebar extends React.Component {
             </li>
           <li>
           <Link href="/exemple/2">
-            <a href="#">Numere mari</a>
+            <a href="#">Infoarena</a>
             </Link>
             </li>
         </ul>
